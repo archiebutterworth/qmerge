@@ -1,0 +1,26 @@
+# Pinned to the versions used to produce the results in the paper (conda env `phys`,
+# Python 3.11). Newer versions of torch/quimb give a different SSO optimiser
+# trajectory, so fit fidelities drift run-to-run; the gate conversion is exact
+# either way.
+
+numpy==2.4.3
+scipy==1.17.1
+pandas==2.3.3
+matplotlib==3.10.8
+scikit-image==0.26.0
+openpyxl==3.1.5
+
+# tensor networks + optimisation
+torch==2.11.0
+quimb==1.13.0
+
+# circuits
+qiskit==2.3.1
+qiskit-aer==0.17.2
+mps-to-circuit==0.1.2
+
+# Quantinuum H2-1 compilation (optional: only 03_hardware_circuit_build.ipynb
+# and the submission cells of 04_shadow_overlap_and_calibration.ipynb need these)
+pytket==2.18.1
+pytket-qiskit==0.77.0
+pytket-quantinuum==0.59.1

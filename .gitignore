@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.venv/
+venv/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# scratch / in-progress run artefacts
+*.tmp.npz
+*.tmp
+backups/
+*.BROKEN-BACKUP.ipynb
+*.borders-backup-*
